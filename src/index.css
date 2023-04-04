@@ -1,13 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: black;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.searsh-bar {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+@media (min-width: 1200px) {
+  .searsh-bar {
+    width: 93% !important;
+  }
+}
+@media (max-width: 835px) {
+  .searsh-bar {
+    width: 89% !important;
+  }
+}
+@media (max-width: 767px) {
+  .searsh-bar {
+    width: 85% !important;
+  }
+}
+@media (max-width: 565px) {
+  .searsh-bar {
+    width: 80% !important;
+  }
+}
+@media (max-width: 435px) {
+  .searsh-bar {
+    width: 75% !important;
+  }
+}
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.category-btn:hover {
+  background-color: #fc1503 !important;
+  color: white !important;
+}
+.category-btn:hover span {
+  color: white !important;
+}
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .copyright {
+    display: none !important;
+  }
 }
