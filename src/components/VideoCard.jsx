@@ -1,8 +1,8 @@
+import { CheckCircle } from '@mui/icons-material'
 import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {demoVideoUrl, demoChannelUrl, demoChannelTitle, demoVideoTitle} from "../utils/Constants"
-import { CheckCircle } from '@mui/icons-material'
+import { demoChannelTitle, demoChannelUrl, demoVideoTitle, demoVideoUrl } from "../utils/Constants"
 
 const VideoCard = ({video: {id: {videoId},snippet}}) => {
   return (
@@ -11,7 +11,7 @@ const VideoCard = ({video: {id: {videoId},snippet}}) => {
         <CardMedia 
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: { xs: '100%', sm: '358px'}, height: 180 }}
+          sx={{ width: { xs: '100%', sm: '358px', md: "320px"}, height: 180 }}
         />
       </Link>
       <CardContent sx={{
